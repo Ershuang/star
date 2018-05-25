@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .star_bg{
+          position: fixed;
+          top:0;
+          margin:0;
+          z-index: -999;
+          overflow: hidden;
+        }
+        #bg{
+            background-color:black;
+            opacity: 0.85;
+        }
+        #canvas{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .content{
+          width:300px;
+          height: 1000px;
+          background-color: #ccc;
+          position: relative;
+
+          top:20%;
+          left:20%;
+          z-index: 1000;
+
+        }
+    </style>
+</head>
+<body>
+  <div class="star_bg">
+    <div id='bg' style='width:1366px; height:631px;'></div>
+    <canvas id='canvas' style='width:1366px; height:631px;' width:'2731' height="1262"></canvas>
+  </div>
+  <!-- <div class="content"> -->
+
+  </div>
+  <script src="dots.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
